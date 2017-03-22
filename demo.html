@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://46neko.github.io/YouTubeAudioAPI/YouTubeAudioAPI.js"></script>
+<script>
+addYaudioEvent("test1","onPlayerReady",function(){console.log("onPlayerReady")});
+addYaudioEvent("test1","playing",function(){console.log("playing")});
+addYaudioEvent("test1","ended",function(){console.log("ended")});
+addYaudioEvent("test1","paused",function(){console.log("paused")});
+addYaudioEvent("test1","buffering",function(){console.log("buffering")});
+addYaudioEvent("test1","cued",function(){console.log("cued")});
+</script>
+</head>
+<body>
+<yaudio id="test1" v="Kls0oAMKz9E" autoplay loop>お使いのブラウザはYouTubeAudioAPIに対応していません。</yaudio>
+<a href='javascript:ytaControls.play("test1")'>Play</a>
+</body>
+</html>
