@@ -7,7 +7,7 @@ The API can play sounds from YouTube.
 It resembles Audio tag of HTML5.
 
 ## Demo
-[Demo]:(https://46neko.github.io/YouTubeAudioAPI/demo.html)  
+https://46neko.github.io/YouTubeAudioAPI/demo.html  
 このデモはyaudioにautoplayとloopの両方のプロパティを設定してあります。  
 そのためモバイル環境でなければ自動再生されます。  
 ですが、モバイル環境ではPlayをタップした際に再生されます。  
