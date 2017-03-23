@@ -18,7 +18,7 @@ But it play when I tapped Play in the mobile environment.
 If you want to know the reason, please see the Usage.
 
 ## Usage
-### prepare
+### Prepare
 もし使いたいサイトがSSL対応であれば  
 If the site that you want to use supports SSL...
 
