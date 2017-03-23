@@ -11,7 +11,7 @@ https://46neko.github.io/YouTubeAudioAPI/demo.html
 このデモはyaudioにautoplayとloopの両方のプロパティを設定してあります。  
 そのためモバイル環境でなければ自動再生されます。  
 ですが、モバイル環境ではPlayをタップした際に再生されます。  
-その理由についてはUsageをご覧ください。 
+その理由についてはUsageをご覧ください。  
 As for this demonstration, both properties of autoplay and loop are set in yaudio.  
 Therefore it is reproduced automatically if it is not mobile environment.  
 But it play when I tapped Play in the mobile environment.  
@@ -68,52 +68,54 @@ ytaControls.isMuted(id)
 ytaControls.change(id,v)
 ```
 
-####これらのコードの説明をします。I explain the details of these cords.
-#####ytaControls.play(id)
+これらのコードの説明をします。  
+I explain the details of these cords.  
+  
+**ytaControls.play(id)**  
 頭出し済み、または読み込み済みの音声を再生します。  
 Plays the currently cued/loaded audio.  
-
-#####ytaControls.pause(id)
+  
+**ytaControls.pause(id)**  
 再生中の音声を一時停止します。  
 Stops and cancels loading of the current audio.  
-
-#####ytaControls.seekTo(id,secounds)
+  
+**ytaControls.seekTo(id,secounds)**  
 音声を指定された時間シークします。  
 Seeks to a specified time in the audio.  
-
-#####ytaControls.getCurrentTime(id)
+  
+**ytaControls.getCurrentTime(id)**  
 音声の再生を開始してからの経過時間を秒数で返します。  
 Returns the elapsed time in seconds since the audio started playing.  
-
-#####ytaControls.getLoadedFraction(id)
+  
+**ytaControls.getLoadedFraction(id)**  
 プレーヤーがバッファ済みの音声の割合を0～1の数値で返します。  
 Returns a number between 0 and 1 that specifies the percentage of the audio that the player shows as buffered.  
-
-#####ytaControls.getDuration(id)
+  
+**ytaControls.getDuration(id)**  
 再生中の動画の長さを秒数で返します。音声のメタデータが読み込まれるまで、getDuration()は0を返します。  
 Returns the duration in seconds of the currently playing audio. Note that getDuration() will return 0 until the audio's metadata is loaded.  
-
-#####ytaControls.setVolume(id,volume)
+  
+**ytaControls.setVolume(id,volume)**  
 音量を設定します。0～100の整数値を指定します。  
 Sets the volume. Accepts an integer between 0 and 100.  
-
-#####ytaControls.getVolume(id)
+  
+**ytaControls.getVolume(id)**  
 プレーヤーの現在の音量を0～100の整数値で返します。getVolume()は、プレーヤーがミュートされている場合でも音量を返します。  
 Returns the player's current volume, an integer between 0 and 100. Note that getVolume() will return the volume even if the player is muted.  
-
-#####ytaControls.mute(id)
+  
+**ytaControls.mute(id)**  
 プレーヤーをミュートします。  
 Mutes the player.  
-
-#####ytaControls.unMute(id)
+  
+**ytaControls.unMute(id)**  
 プレーヤーのミュートを解除します。  
 Unmutes the player.    
-
-#####ytaControls.isMuted(id)
+  
+**ytaControls.isMuted(id)**  
 プレーヤーがミュートされている場合はtrueを、ミュートされていない場合はfalseを返します。  
 Returns true if the player is muted, false if not.  
-
-#####ytaControls.change(id,v)
+  
+**ytaControls.change(id,v)**  
 yaudioタグは、v属性を直接変更して音源として使用する動画を変更することができません。  
 そのため動画の変更はこのコードを使用して行います。  
 引数vにはYouTubeIDを記述します。  
