@@ -75,14 +75,20 @@ return players[id];
 var ytaControls={
 play:function(id){getPlayer(id).playVideo();},
 pause:function(id){getPlayer(id).pauseVideo();},
-stop:function(id){getPlayer(id).stopVideo();},
 seekTo:function(id,seconds){getPlayer(id).seekTo(seconds,true);},
-clear:function(id){getPlayer(id).clearVideo();},
 getCurrentTime:function(id){return getPlayer(id).getCurrentTime();},
 getLoadedFraction:function(id){return getPlayer(id).getVideoLoadedFraction();},
 getDuration:function(id){return getPlayer(id).getDuration();},
 setVolume:function(id,volume){getPlayer(id).setVolume(volume);},
 getVolume:function(id){return getPlayer(id).getVolume();},
-isMuted:function(id){return getPlayer(id).isMuted();},
+mute:function(id){getPlayer(id).mute();},
 unMute:function(id){getPlayer(id).unMute();},
-mute:function(id){getPlayer(id).mute();}};
+isMuted:function(id){return getPlayer(id).isMuted();},
+change:function(id,v){
+ele=document.getElementById(id).parentNode;
+ele.innerHTML='<div id="'+id+'"></div>';
+players[id]=new YT.Player(id,{width:300,height:150,videoId:v,events:{'onReady': onPlayerReady,'onStateChange':onPlayerStateChange}});
+document.getElementById(id).setAttribute("autoplay",ele.getAttribute("autoplay"));
+document.getElementById(id).setAttribute("loop",ele.getAttribute("loop"));
+recount[id]=3;
+}};
