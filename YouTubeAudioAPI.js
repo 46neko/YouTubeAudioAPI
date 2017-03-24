@@ -86,6 +86,7 @@ unMute:function(id){getPlayer(id).unMute();},
 isMuted:function(id){return getPlayer(id).isMuted();},
 change:function(id,v){
 ele=document.getElementById(id).parentNode;
+ele..setAttribute("v",v)
 ele.innerHTML='<div id="'+id+'"></div>';
 players[id]=new YT.Player(id,{width:300,height:150,videoId:v,events:{'onReady': onPlayerReady,'onStateChange':onPlayerStateChange}});
 document.getElementById(id).setAttribute("autoplay",ele.getAttribute("autoplay"));
