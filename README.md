@@ -67,8 +67,8 @@ ytaControls.isMuted(id)
 ytaControls.change(id,v)
 ```
 
-#### これらのコードの詳細  
-#### A details of these cords  
+**これらのコードの詳細**  
+**A details of these cords**  
   
 **ytaControls.play(id)**  
 頭出し済み、または読み込み済みの音声を再生します。  
