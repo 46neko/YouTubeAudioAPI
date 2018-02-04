@@ -1,9 +1,8 @@
 ﻿YouTubeAudioAPI
 ====
 
-HTML5のAudioタグと同じようにYouYubeを音源として使用できます。  
------Please forgive me my lousy English.﻿  
-The API can play sounds from YouTube.  
+HTML5のAudioタグと同じようにYouYubeを音源として使用できます。    
+This API can play sounds from YouTube.  
 It resembles Audio tag of HTML5.
 
 ## Demo
