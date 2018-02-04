@@ -33,9 +33,9 @@ If not so...
 ```
 
 とheadタグ内に記述してください。  
-Please write a text above to the head tag.
+Please write the above text to the head tag.
 
-### To read
+### The style of the tag
 
 ```html
 <yaudio id="test1" v="YouTubeID" autoplay loop></yaudio>
@@ -67,8 +67,8 @@ ytaControls.isMuted(id)
 ytaControls.change(id,v)
 ```
 
-これらのコードの説明をします。  
-I explain the details of these cords.  
+#### これらのコードの詳細  
+#### A details of these cords  
   
 **ytaControls.play(id)**  
 頭出し済み、または読み込み済みの音声を再生します。  
